@@ -311,6 +311,22 @@ export default function Donate() {
                   🔒 Secured with 256-bit SSL encryption. Your payment is safe.
                 </p>
 
+                {/* Direct Bank Transfer Details */}
+                <div style={{ marginTop: '1.5rem', padding: '1.25rem', background: 'white', borderRadius: 'var(--radius-lg)', border: '1px solid #e2e8f0', boxShadow: 'var(--shadow-sm)' }}>
+                  <h3 style={{ fontSize: '1rem', fontFamily: 'var(--font-display)', marginBottom: '0.75rem', color: 'var(--text-dark)' }}>Direct Bank Transfer</h3>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-mid)', marginBottom: '1rem' }}>Wholistic Outreach RCCG account details: (Naira account)</p>
+                  <div style={{ fontSize: '0.9rem', color: 'var(--text-dark)' }}>
+                    <div style={{ background: 'var(--bg-light)', padding: '0.75rem', borderRadius: 'var(--radius-md)', marginBottom: '0.5rem', border: '1px solid #f1f5f9' }}>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--text-light)', marginBottom: '0.25rem' }}>Zenith Bank</div>
+                      <strong style={{ fontFamily: 'monospace', fontSize: '1rem' }}>1010772868</strong>
+                    </div>
+                    <div style={{ background: 'var(--bg-light)', padding: '0.75rem', borderRadius: 'var(--radius-md)', border: '1px solid #f1f5f9' }}>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--text-light)', marginBottom: '0.25rem' }}>Premium Trust Bank</div>
+                      <strong style={{ fontFamily: 'monospace', fontSize: '1rem' }}>0040190288</strong>
+                    </div>
+                  </div>
+                </div>
+
                 <div style={{ marginTop: '1.5rem', padding: '1.25rem', background: 'var(--purple-50)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--purple-200)' }}>
                   <p style={{ color: 'var(--text-mid)', lineHeight: 1.6, fontStyle: 'italic', fontFamily: 'var(--font-elegant)', fontSize: '1rem' }}>
                     "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."

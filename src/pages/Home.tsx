@@ -184,9 +184,25 @@ export default function Home() {
           <p className="section-subtitle light" style={{ margin: '0 auto 2.5rem', maxWidth: 560 }}>
             Every gift — however small — enables us to reach more lives, host more events, and build stronger communities. Give today and be part of the transformation.
           </p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
             <Link to="/donate" className="btn btn-gold btn-lg"><Heart size={18} style={{ display: 'inline', marginRight: '0.5rem' }} /> Give Now</Link>
             <Link to="/contact" className="btn btn-white btn-lg">Become a Partner</Link>
+          </div>
+
+          {/* Direct Bank Transfer Details */}
+          <div style={{ maxWidth: '500px', margin: '0 auto', background: 'rgba(255,255,255,0.08)', padding: '1.5rem', borderRadius: 'var(--radius-lg)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.15)', textAlign: 'left' }} className="fade-up">
+            <h3 style={{ color: 'white', fontFamily: 'var(--font-display)', marginBottom: '0.25rem', fontSize: '1.1rem', textAlign: 'center' }}>Direct Bank Transfer (Naira Account)</h3>
+            <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', marginBottom: '1.25rem', textAlign: 'center' }}>Wholistic Outreach RCCG</p>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', color: 'white' }}>
+              <div style={{ background: 'rgba(0,0,0,0.2)', padding: '1rem', borderRadius: 'var(--radius-md)', textAlign: 'center', border: '1px solid rgba(255,255,255,0.05)' }}>
+                <div style={{ color: 'var(--purple-300)', fontSize: '0.8rem', marginBottom: '0.25rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Zenith Bank</div>
+                <strong style={{ fontSize: '1.1rem', fontFamily: 'monospace' }}>1010772868</strong>
+              </div>
+              <div style={{ background: 'rgba(0,0,0,0.2)', padding: '1rem', borderRadius: 'var(--radius-md)', textAlign: 'center', border: '1px solid rgba(255,255,255,0.05)' }}>
+                <div style={{ color: 'var(--purple-300)', fontSize: '0.8rem', marginBottom: '0.25rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Premium Trust Bank</div>
+                <strong style={{ fontSize: '1.1rem', fontFamily: 'monospace' }}>0040190288</strong>
+              </div>
+            </div>
           </div>
         </div>
       </section>
