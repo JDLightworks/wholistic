@@ -128,7 +128,7 @@ export default function Blog() {
                 overflow: 'hidden',
                 boxShadow: 'var(--shadow-md)',
                 display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
                 marginBottom: '4rem',
                 cursor: 'pointer',
                 transition: 'all 0.4s ease',

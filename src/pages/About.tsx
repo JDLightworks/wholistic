@@ -75,7 +75,7 @@ export default function About() {
       {/* ── GENERAL OVERVIEW ── */}
       <section className="section" aria-labelledby="overview-heading">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div className="fade-up">
               <img src={hero2} alt="Ministry work" style={{ width: '100%', height: '450px', objectFit: 'cover', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }} />
             </div>
@@ -105,7 +105,7 @@ export default function About() {
       {/* ── VISION & MISSION ── */}
       <section className="section" style={{ background: 'var(--purple-50)' }} aria-labelledby="mission-heading">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
             <div className="fade-up">
               <div style={{ background: 'white', borderRadius: 'var(--radius-lg)', padding: '2.5rem', boxShadow: 'var(--shadow-sm)', height: '100%' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
@@ -193,7 +193,7 @@ export default function About() {
             <span className="section-label">Our Direction</span>
             <h2 className="section-title" id="objectives-heading">Key Objectives & Goals</h2>
           </div>
-          <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+          <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
             {keyObjectives.map((obj, i) => (
               <div key={i} className="fade-up" style={{ animationDelay: `${i * 0.08}s` }}>
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start', background: 'white', padding: '1.5rem', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-sm)' }}>
@@ -209,7 +209,7 @@ export default function About() {
       {/* ── TARGET GROUPS ── */}
       <section className="section" aria-labelledby="target-heading">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div className="fade-up">
               <span className="section-label">Our Focus</span>
               <h2 className="section-title" id="target-heading">Target Groups</h2>

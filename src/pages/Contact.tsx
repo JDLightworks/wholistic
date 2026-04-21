@@ -144,7 +144,7 @@ export default function Contact() {
                 >
                   <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.75rem', marginBottom: '2rem', color: 'var(--text-dark)' }}>Send a Message</h2>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1rem' }}>
                     <div className="form-group">
                       <label className="form-label" htmlFor="contact-name">Full Name *</label>
                       <input id="contact-name" type="text" className="form-input" placeholder="Your full name" value={form.name} onChange={e => update('name', e.target.value)} required aria-required="true" />
@@ -155,7 +155,7 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1rem' }}>
                     <div className="form-group">
                       <label className="form-label" htmlFor="contact-phone">Phone (optional)</label>
                       <input id="contact-phone" type="tel" className="form-input" placeholder="+234 800 000 0000" value={form.phone} onChange={e => update('phone', e.target.value)} />

@@ -286,7 +286,7 @@ export default function CMS() {
                 <label className="form-label" htmlFor="post-title">Title *</label>
                 <input id="post-title" className="form-input" value={postForm.title} onChange={e => setPostForm(f => ({ ...f, title: e.target.value }))} placeholder="Post title" />
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem' }}>
                 <div className="form-group">
                   <label className="form-label" htmlFor="post-author">Author</label>
                   <input id="post-author" className="form-input" value={postForm.author} onChange={e => setPostForm(f => ({ ...f, author: e.target.value }))} />
@@ -340,7 +340,7 @@ export default function CMS() {
                 <label className="form-label" htmlFor="event-title">Event Title *</label>
                 <input id="event-title" className="form-input" value={eventForm.title} onChange={e => setEventForm(f => ({ ...f, title: e.target.value }))} placeholder="Event name" />
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem' }}>
                 <div className="form-group">
                   <label className="form-label" htmlFor="event-date">Date</label>
                   <input id="event-date" type="date" className="form-input" value={eventForm.date} onChange={e => setEventForm(f => ({ ...f, date: e.target.value }))} />

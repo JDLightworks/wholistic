@@ -18,13 +18,30 @@ export default function Navbar() {
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', handler);
+    window.addEventListener('scroll', handler, { passive: true });
     return () => window.removeEventListener('scroll', handler);
   }, []);
 
   useEffect(() => {
     setMobileOpen(false);
   }, [location]);
+
+  useEffect(() => {
+    // Handle body scroll lock when mobile menu opens/closes
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+      document.documentElement.style.overflow = 'auto';
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'auto';
+      document.documentElement.style.overflow = 'auto';
+    };
+  }, [mobileOpen]);
 
   const navClass = `navbar${scrolled ? ' scrolled' : ''}${!isHome ? ' solid' : ''}`;
 
@@ -59,10 +76,12 @@ export default function Navbar() {
             </div>
 
             <button
+              type="button"
               className="hamburger"
-              onClick={() => setMobileOpen(true)}
-              aria-label="Open mobile menu"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle mobile menu"
               aria-expanded={mobileOpen}
+              aria-controls="mobile-menu"
             >
               <span /><span /><span />
             </button>
@@ -71,7 +90,7 @@ export default function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+        <div className="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
           <button
             className="mobile-close"
             onClick={() => setMobileOpen(false)}

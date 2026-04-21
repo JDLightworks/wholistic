@@ -166,7 +166,7 @@ export default function Donate() {
               </button>
             </div>
           ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 380px', gap: '3rem', alignItems: 'start' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'start' }}>
               <div>
                 {/* ── STEP 1: Amount ── */}
                 <div className="fade-up" style={{ background: 'white', borderRadius: 'var(--radius-xl)', padding: '2.5rem', boxShadow: 'var(--shadow-sm)', marginBottom: '1.5rem' }}>
@@ -234,7 +234,7 @@ export default function Donate() {
                 {/* ── STEP 2: Donor Info ── */}
                 <div className="fade-up" style={{ background: 'white', borderRadius: 'var(--radius-xl)', padding: '2.5rem', boxShadow: 'var(--shadow-sm)', marginBottom: '1.5rem' }}>
                   <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--text-dark)' }}>2. Your Details</h2>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1rem' }}>
                     <div className="form-group">
                       <label className="form-label" htmlFor="donor-name">Full Name *</label>
                       <input type="text" id="donor-name" className="form-input" placeholder="Your full name" value={name} onChange={e => setName(e.target.value)} required />
@@ -281,7 +281,7 @@ export default function Donate() {
               </div>
 
               {/* ── SUMMARY SIDEBAR ── */}
-              <div className="fade-up" style={{ position: 'sticky', top: '90px' }}>
+              <div className="fade-up" style={{ position: 'sticky', top: '90px', gridColumn: 'auto' }}>
                 <div style={{ background: 'var(--grad-purple)', borderRadius: 'var(--radius-xl)', padding: '2rem', color: 'white', marginBottom: '1rem' }}>
                   <p style={{ fontSize: '0.75rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--purple-200)', marginBottom: '0.5rem' }}>Donation Summary</p>
                   <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', fontWeight: 700, marginBottom: '0.25rem' }}>
