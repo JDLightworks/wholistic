@@ -50,9 +50,9 @@ export default function Navbar() {
       <nav className={navClass} role="navigation" aria-label="Main navigation">
         <div className="container">
           <div className="nav-inner">
-            <Link to="/" className="nav-logo" aria-label="The Wholistic Outreach Home">
-              <span className="nav-logo-text"><Star size={20} style={{ display: 'inline', marginRight: '0.3rem' }} />The Wholistic</span>
-              <span className="nav-logo-sub">Outreach Ministry</span>
+            <Link to="/" className="nav-logo" aria-label="Wholistic Outreach RCCG Home">
+              <span className="nav-logo-text"><Star size={20} style={{ display: 'inline', marginRight: '0.3rem' }} />Wholistic Outreach</span>
+              <span className="nav-logo-sub">RCCG • Matt 25:34-40</span>
             </Link>
 
             <ul className="nav-links" role="list">

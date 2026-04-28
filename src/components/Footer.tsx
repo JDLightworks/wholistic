@@ -23,9 +23,9 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand */}
           <div>
-            <div className="footer-brand-name"><Star size={20} style={{ display: 'inline', marginRight: '0.5rem' }} />The Wholistic Outreach</div>
+            <div className="footer-brand-name"><Star size={20} style={{ display: 'inline', marginRight: '0.5rem' }} />Wholistic Outreach RCCG</div>
             <p className="footer-desc">
-              Empowering lives through love, faith, and community. We believe in the wholistic transformation of every person — body, soul, and spirit.
+              Empowering lives through love, faith, and community rooted in Matthew 25:34-40. We believe in the wholistic transformation of every person — body, soul, and spirit.
             </p>
             <div className="social-links" role="list" aria-label="Social media links">
               {[
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} The Wholistic Outreach. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Wholistic Outreach RCCG. All rights reserved.</p>
           <p>Made with <Heart size={14} style={{ display: 'inline', color: '#f43f5e' }} /> for purpose-driven lives</p>
         </div>
       </div>

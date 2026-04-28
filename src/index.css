@@ -5,35 +5,35 @@
 
 :root {
   /* ── Color Palette ── */
-  --purple-950:  #1e0533;
-  --purple-900:  #2d0a4e;
-  --purple-800:  #44106b;
-  --purple-700:  #5e1b8a;
-  --purple-600:  #7c2fa0;
-  --purple-500:  #9b45b8;
-  --purple-400:  #b86dd0;
-  --purple-300:  #d49ce6;
-  --purple-200:  #e8caF5;
-  --purple-100:  #f5eafc;
-  --purple-50:   #fdf6ff;
+  --purple-950:  #0f1f2e;
+  --purple-900:  #1a2d3f;
+  --purple-800:  #1f3a52;
+  --purple-700:  #2d5a7b;
+  --purple-600:  #1b5e3f;
+  --purple-500:  #2d7a5c;
+  --purple-400:  #4a9d7f;
+  --purple-300:  #6eb89f;
+  --purple-200:  #a8d5c2;
+  --purple-100:  #d4e8df;
+  --purple-50:   #f0f5f2;
 
-  --rose-500:    #f43f5e;
-  --rose-400:    #fb7185;
-  --rose-300:    #fda4af;
-  --rose-100:    #ffe4e6;
+  --rose-500:    #1b5e3f;
+  --rose-400:    #2d7a5c;
+  --rose-300:    #4a9d7f;
+  --rose-100:    #d4e8df;
 
   --gold-500:    #d4a847;
   --gold-400:    #e6c165;
   --gold-300:    #f0d88a;
 
   --white:       #ffffff;
-  --off-white:   #fdfbfe;
-  --text-dark:   #1a0a2e;
-  --text-mid:    #4a3560;
-  --text-light:  #8b6fa8;
+  --off-white:   #f8f9f7;
+  --text-dark:   #0f1f2e;
+  --text-mid:    #2d5a7b;
+  --text-light:  #5a7a8f;
 
   /* ── Gradients ── */
-  --grad-hero:       linear-gradient(135deg, rgba(30,5,51,0.85) 0%, rgba(92,27,138,0.75) 50%, rgba(180,100,210,0.6) 100%);
+  --grad-hero:       linear-gradient(135deg, rgba(15,31,46,0.85) 0%, rgba(45,90,123,0.75) 50%, rgba(27,94,63,0.6) 100%);
   --grad-purple:     linear-gradient(135deg, var(--purple-900), var(--purple-600));
   --grad-soft:       linear-gradient(135deg, var(--purple-100), var(--rose-100));
   --grad-card:       linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
@@ -49,10 +49,10 @@
   --container-max:   1280px;
 
   /* ── Shadows ── */
-  --shadow-sm:       0 2px 12px rgba(92,27,138,0.1);
-  --shadow-md:       0 8px 32px rgba(92,27,138,0.18);
-  --shadow-lg:       0 20px 60px rgba(92,27,138,0.25);
-  --shadow-glow:     0 0 40px rgba(155,69,184,0.3);
+  --shadow-sm:       0 2px 12px rgba(27,94,63,0.1);
+  --shadow-md:       0 8px 32px rgba(27,94,63,0.18);
+  --shadow-lg:       0 20px 60px rgba(27,94,63,0.25);
+  --shadow-glow:     0 0 40px rgba(45,122,92,0.3);
 
   /* ── Border radius ── */
   --radius-sm: 8px;
@@ -76,7 +76,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 body {
@@ -175,11 +175,11 @@ input, textarea, select {
 .btn-primary {
   background: var(--grad-purple);
   color: white;
-  box-shadow: 0 4px 20px rgba(92,27,138,0.35);
+  box-shadow: 0 4px 20px rgba(45,90,123,0.35);
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(92,27,138,0.5);
+  box-shadow: 0 8px 28px rgba(45,90,123,0.5);
 }
 
 .btn-outline {
@@ -269,7 +269,7 @@ input, textarea, select {
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
   font-weight: 600;
   color: var(--text-dark);
   line-height: 1.2;
@@ -282,7 +282,7 @@ input, textarea, select {
 
 .section-subtitle {
   font-family: var(--font-body);
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
   color: var(--text-mid);
   max-width: 640px;
   line-height: 1.7;
@@ -380,7 +380,7 @@ input, textarea, select {
 }
 .page-hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.75rem, 7vw, 5rem);
   font-weight: 600;
   color: white;
   position: relative;
@@ -484,7 +484,7 @@ input, textarea, select {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(30,5,51,0.7);
+  background: rgba(15,31,46,0.7);
   backdrop-filter: blur(8px);
   z-index: 1000;
   display: flex;
@@ -530,7 +530,7 @@ input, textarea, select {
 }
 
 .navbar.scrolled {
-  background: rgba(30,5,51,0.95);
+  background: rgba(15,31,46,0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: 0.75rem 0;
@@ -538,7 +538,7 @@ input, textarea, select {
 }
 
 .navbar.solid {
-  background: rgba(30,5,51,0.95);
+  background: rgba(15,31,46,0.95);
   backdrop-filter: blur(20px);
   padding: 0.75rem 0;
   box-shadow: 0 4px 30px rgba(0,0,0,0.2);
@@ -638,7 +638,7 @@ input, textarea, select {
   .mobile-menu {
     position: fixed;
     inset: 0;
-    background: rgba(30,5,51,0.98);
+    background: rgba(15,31,46,0.98);
     backdrop-filter: blur(20px);
     z-index: 950;
     display: flex;
@@ -737,7 +737,7 @@ input, textarea, select {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(3.25rem, 8vw, 6.5rem);
   font-weight: 600;
   color: white;
   line-height: 1.1;
@@ -752,7 +752,7 @@ input, textarea, select {
 
 .hero-tagline {
   font-family: var(--font-elegant);
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
   color: rgba(255,255,255,0.85);
   margin-bottom: 2.5rem;
   font-style: italic;
@@ -835,7 +835,7 @@ input, textarea, select {
 
 .stat-number {
   font-family: var(--font-display);
-  font-size: 2.75rem;
+  font-size: 3rem;
   font-weight: 700;
   color: white;
   line-height: 1;
@@ -933,7 +933,7 @@ input, textarea, select {
 }
 .blog-card-title {
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: var(--text-dark);
   line-height: 1.35;
@@ -996,7 +996,7 @@ input, textarea, select {
 .event-info { flex: 1; }
 .event-title {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   font-weight: 600;
   color: var(--text-dark);
   margin-bottom: 0.5rem;
@@ -1292,7 +1292,7 @@ input, textarea, select {
 }
 .team-avatar img { width: 100%; height: 100%; object-fit: cover; }
 .team-info { padding: 1.5rem; }
-.team-name { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.25rem; }
+.team-name { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; margin-bottom: 0.25rem; }
 .team-role { font-size: 0.85rem; color: var(--purple-600); font-weight: 500; }
 
 /* ══ VOLUNTEER CTA ══ */

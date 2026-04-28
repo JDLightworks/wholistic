@@ -93,7 +93,7 @@ export default function Donate() {
           payment_options: 'card,banktransfer,ussd',
           customer: { email, phone_number: phone, name },
           customizations: {
-            title: 'The Wholistic Outreach',
+            title: 'Wholistic Outreach RCCG',
             description: `Donation — ${purpose}`,
             logo: '',
           },

@@ -65,7 +65,7 @@ export default function About() {
         </div>
         <div style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
           <p className="hero-eyebrow" style={{ marginBottom: '1rem' }}><Star size={16} style={{ display: 'inline' }} /> Our Story <Star size={16} style={{ display: 'inline' }} /></p>
-          <h1 id="about-page-heading">About The Wholistic Outreach</h1>
+          <h1 id="about-page-heading">About Wholistic Outreach RCCG</h1>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.15rem', marginTop: '0.75rem', fontFamily: 'var(--font-elegant)', fontStyle: 'italic' }}>
             Breaking cycles, restoring dignity, renewing hope
           </p>
@@ -85,10 +85,10 @@ export default function About() {
               <div className="divider" />
               <div style={{ fontSize: '1rem', color: 'var(--text-mid)', lineHeight: 1.85, marginBottom: '1.5rem' }}>
                 <p style={{ marginBottom: '1rem' }}>
-                  <strong>The Wholistic Outreach</strong> is one of the ministries under the office of the Wife of the General Overseer of the Redeemed Christian Church of God, Pastor (Mrs.) Folu Adeboye. The ministry is currently active and effective in the work of social reformation and community development.
+                  <strong>Wholistic Outreach RCCG</strong> is one of the ministries under the office of the Wife of the General Overseer of the Redeemed Christian Church of God, Pastor (Mrs.) Folu Adeboye. Rooted in Matthew 25:34-40, the ministry is currently active and effective in the work of social reformation and community development.
                 </p>
                 <p style={{ marginBottom: '1rem' }}>
-                  The Wholistic Outreach is a faith-based non-profit organization dedicated to <strong>mending broken lives, restoring families, and renewing hope</strong>. We believe this is the heart of God: breaking the cycle of abuse and abandonment for female sex workers, trafficked girls, abandoned girls, and teens in a Christ-centered home and learning environment.
+                  Wholistic Outreach RCCG is a faith-based non-profit organization dedicated to <strong>mending broken lives, restoring families, and renewing hope</strong>. We believe this is the heart of God as revealed in Matthew 25:34-40: breaking the cycle of abuse and abandonment for female sex workers, trafficked girls, abandoned girls, and teens in a Christ-centered home and learning environment.
                 </p>
                 <p style={{ marginBottom: '1rem' }}>
                   We provide a safe home and a loving family atmosphere for unwed mothers and children at risk. Because we are God-based, we offer true and lasting hope in otherwise hopeless situations. Our organization models God's love and purity to a generation of youths, bringing hope, love, and succor to stranded young girls and ladies who have been abused, forsaken, and made vulnerable through sexual exploitation.

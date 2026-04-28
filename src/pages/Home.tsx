@@ -82,7 +82,7 @@ export default function Home() {
         ))}
         <div className="hero-overlay" />
         <div className="hero-content">
-          <p className="hero-eyebrow"><Star size={16} style={{ display: 'inline' }} /> The Wholistic Outreach Ministry <Star size={16} style={{ display: 'inline' }} /></p>
+          <p className="hero-eyebrow"><Star size={16} style={{ display: 'inline' }} /> Wholistic Outreach RCCG — Matt 25:34-40 <Star size={16} style={{ display: 'inline' }} /></p>
           <h1 className="hero-title" key={slideIdx}>
             {heroSlides[slideIdx].title} <em>{heroSlides[slideIdx].em}</em>
           </h1>
@@ -142,7 +142,7 @@ export default function Home() {
               <h2 className="section-title" id="about-heading">A Ministry of<br /><em style={{ fontStyle: 'italic', color: 'var(--purple-600)' }}>Love & Wholeness</em></h2>
               <div className="divider" />
               <p style={{ fontSize: '1.05rem', color: 'var(--text-mid)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                The Wholistic Outreach is a Spirit-led ministry dedicated to transforming lives through the power of God's love. We serve women, families, and communities across Nigeria and beyond — bringing healing, empowerment, and divine purpose to every heart we touch.
+                Wholistic Outreach RCCG is a Spirit-led ministry dedicated to transforming lives through the power of God's love, grounded in Matthew 25:34-40. We serve women, families, and communities across Nigeria and beyond — bringing healing, empowerment, and divine purpose to every heart we touch.
               </p>
               <p style={{ fontSize: '1rem', color: 'var(--text-mid)', lineHeight: 1.8, marginBottom: '2rem' }}>
                 From powerful conferences and prayer nights to community outreach and counseling, every programme is designed to address the whole person — spirit, soul, and body.
@@ -150,14 +150,23 @@ export default function Home() {
               <Link to="/about" className="btn btn-primary">Discover Our Story <ArrowRight size={16} /></Link>
             </div>
             <div className="fade-up" style={{ position: 'relative' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
                 {[hero2, hero3, hero4, hero5].map((img, i) => (
                   <div key={i} style={{
                     borderRadius: 'var(--radius-lg)',
                     overflow: 'hidden',
-                    height: i === 0 ? '280px' : i === 1 ? '200px' : i === 2 ? '200px' : '280px',
-                    transform: `translateY(${i % 2 === 0 ? '0' : '20px'})`,
-                    boxShadow: 'var(--shadow-md)'
+                    height: '320px',
+                    boxShadow: 'var(--shadow-md)',
+                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                    cursor: 'pointer'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-8px)';
+                    e.currentTarget.style.boxShadow = 'var(--shadow-lg)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = 'var(--shadow-md)';
                   }}>
                     <img src={img} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
