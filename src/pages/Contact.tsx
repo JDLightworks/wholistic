@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, Flower, Camera, ThumbsUp, Play, Star } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 interface ToastState { msg: string; type: 'success' | 'error' }
 
 const contactInfo = [
   { icon: <MapPin size={20} />, title: 'Our Locations', lines: ['Lagos: Victoria Island, Lagos, Nigeria', 'Abuja: Maitama, Abuja, Nigeria'] },
-  { icon: <Phone size={20} />, title: 'Call Us', lines: ['+234 800 000 0000', '+234 801 234 5678'] },
-  { icon: <Mail size={20} />, title: 'Email Us', lines: ['hello@wholisticoutreach.org', 'admin@wholisticoutreach.org'] },
+  { icon: <Phone size={20} />, title: 'Call Us', lines: ['08023621200', '08141665805', '08060207832', '07065839074', '07042493827'] },
+  { icon: <Mail size={20} />, title: 'Email Us', lines: ['wholistic.outreach@yahoo.com'] },
   { icon: <Clock size={20} />, title: 'Office Hours', lines: ['Monday – Friday: 9am – 5pm', 'Saturday: 10am – 2pm (by appointment)'] },
 ];
 
@@ -19,6 +20,9 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
 
   useEffect(() => {
+    // Initialize EmailJS with your public key
+    emailjs.init('nZqsT7vk7maKEgykE');
+    
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.1 });
@@ -39,11 +43,31 @@ export default function Contact() {
       return;
     }
     setLoading(true);
-    // Simulate API call
-    await new Promise(r => setTimeout(r, 1500));
-    setLoading(false);
-    setSent(true);
-    setToast({ msg: 'Message sent! We\'ll be in touch soon. 💜', type: 'success' });
+    
+    try {
+      // Send emails to both Gmail and Yahoo
+      const emailData = {
+        from_name: form.name,
+        from_email: form.email,
+        phone: form.phone,
+        inquiry_type: form.type,
+        subject: form.subject,
+        message: form.message,
+      };
+
+      await Promise.all([
+        emailjs.send('service_m1rluo6', 'template_7yq2656', emailData), // Gmail
+        emailjs.send('service_m1rluo6', 'template_7yq2656', { ...emailData, to_email: 'wholistic.outreach@yahoo.com' }) // Yahoo (if your template supports it)
+      ]);
+      
+      setLoading(false);
+      setSent(true);
+      setToast({ msg: 'Message sent! We\'ll be in touch soon. 💜', type: 'success' });
+    } catch (error) {
+      console.error('Email send failed:', error);
+      setLoading(false);
+      setToast({ msg: 'Failed to send message. Please try again.', type: 'error' });
+    }
   };
 
   return (
@@ -64,7 +88,7 @@ export default function Contact() {
             {/* ── Left: Info ── */}
             <div className="fade-up">
               <span className="section-label">Get In Touch</span>
-              <h2 className="section-title" style={{ marginBottom: '0.5rem' }}>Let's Connect</h2>
+              <h2 className="section-title" style={{ marginBottom: '0.5rem' }}>Redemption City of God</h2>
               <div className="divider" />
               <p style={{ color: 'var(--text-mid)', lineHeight: 1.8, marginBottom: '2.5rem', fontSize: '1rem' }}>
                 Whether you have questions about our events, want to volunteer, request prayer, or explore partnership opportunities — we are here for you. Reach out through any of the channels below.
