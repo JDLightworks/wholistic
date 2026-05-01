@@ -246,8 +246,9 @@ export default function Contact() {
             <div style={{ fontSize: '3rem' }}>🗺️</div>
             <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', color: 'var(--purple-800)' }}>Find Us In Nigeria</h3>
             <p style={{ color: 'var(--text-mid)', maxWidth: '400px' }}>Lagos: Victoria Island · Abuja: Maitama District</p>
+            <p style={{ color: 'var(--text-mid)', maxWidth: '400px' }}>Coordinates: 6.8256654, 3.4627868</p>
             <a
-              href="https://maps.google.com?q=Victoria+Island+Lagos+Nigeria"
+              href="https://www.google.com/maps?q=6.8256654,3.4627868"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary btn-sm"
