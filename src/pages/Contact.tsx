@@ -5,7 +5,12 @@ import emailjs from '@emailjs/browser';
 interface ToastState { msg: string; type: 'success' | 'error' }
 
 const contactInfo = [
-  { icon: <MapPin size={20} />, title: 'Our Locations', lines: ['Lagos: Victoria Island, Lagos, Nigeria', 'Abuja: Maitama, Abuja, Nigeria'] },
+  { icon: <MapPin size={20} />, title: 'Our Locations', lines: [
+    'Redemption City of God',
+    'Kilometer 46, Lagos-Ibadan Expressway, Mowe, Ogun State, Nigeria',
+    'Lagos: Victoria Island, Lagos, Nigeria',
+    'Abuja: Maitama, Abuja, Nigeria'
+  ] },
   { icon: <Phone size={20} />, title: 'Call Us', lines: ['08023621200', '08141665805', '08060207832', '07065839074', '07042493827'] },
   { icon: <Mail size={20} />, title: 'Email Us', lines: ['wholistic.outreach@yahoo.com'] },
   { icon: <Clock size={20} />, title: 'Office Hours', lines: ['Monday – Friday: 9am – 5pm', 'Saturday: 10am – 2pm (by appointment)'] },

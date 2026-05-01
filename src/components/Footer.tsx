@@ -73,15 +73,34 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="footer-heading">Contact</h3>
-            <ul className="footer-links" style={{ gap: '0.8rem' }}>
+            <ul className="footer-links" style={{ gap: '0.6rem' }}>
+              <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
+                <MapPin size={16} />
+                <div>
+                  <div>Redemption City of God</div>
+                  <div>Kilometer 46, Lagos-Ibadan Expressway, Mowe, Ogun State, Nigeria</div>
+                </div>
+              </li>
               <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <MapPin size={16} /> Lagos & Abuja, Nigeria
+                <Mail size={16} /> wholistic.outreach@yahoo.com
               </li>
               <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Mail size={16} /> hello@wholisticoutreach.org
               </li>
               <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Phone size={16} /> +234 800 000 0000
+                <Phone size={16} /> 08023621200
+              </li>
+              <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Phone size={16} /> 08141665805
+              </li>
+              <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Phone size={16} /> 08060207832
+              </li>
+              <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Phone size={16} /> 07065839074
+              </li>
+              <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Phone size={16} /> 07042493827
               </li>
               <li style={{ marginTop: '0.5rem' }}>
                 <Link to="/contact" className="btn btn-outline btn-sm" style={{ color: 'rgba(255,255,255,0.7)', borderColor: 'rgba(255,255,255,0.3)', fontWeight: 500 }}>
