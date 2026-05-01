@@ -8,8 +8,6 @@ const contactInfo = [
   { icon: <MapPin size={20} />, title: 'Our Locations', lines: [
     'Redemption City of God',
     'Kilometer 46, Lagos-Ibadan Expressway, Mowe, Ogun State, Nigeria',
-    'Lagos: Victoria Island, Lagos, Nigeria',
-    'Abuja: Maitama, Abuja, Nigeria'
   ] },
   { icon: <Phone size={20} />, title: 'Call Us', lines: ['08023621200', '08141665805', '08060207832', '07065839074', '07042493827'] },
   { icon: <Mail size={20} />, title: 'Email Us', lines: ['wholistic.outreach@yahoo.com'] },
@@ -245,10 +243,9 @@ export default function Contact() {
           }}>
             <div style={{ fontSize: '3rem' }}>🗺️</div>
             <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', color: 'var(--purple-800)' }}>Find Us In Nigeria</h3>
-            <p style={{ color: 'var(--text-mid)', maxWidth: '400px' }}>Lagos: Victoria Island · Abuja: Maitama District</p>
-            <p style={{ color: 'var(--text-mid)', maxWidth: '400px' }}>Coordinates: 6.8256654, 3.4627868</p>
+        
             <a
-              href="https://www.google.com/maps?q=6.8256654,3.4627868"
+              href="https://www.google.com/maps/place/Redemption+City,+Pakuro+110113,+Ogun+State/@6.8155529,3.4387864,14.14z/data=!4m6!3m5!1s0x103bc0d7afdbeff1:0x8fb55c4a02c7a113!8m2!3d6.814186!4d3.4580168!16s%2Fg%2F11wr2v8qy4?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary btn-sm"
