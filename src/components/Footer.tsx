@@ -84,9 +84,7 @@ export default function Footer() {
               <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Mail size={16} /> wholistic.outreach@yahoo.com
               </li>
-              <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Mail size={16} /> hello@wholisticoutreach.org
-              </li>
+    
               <li style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Phone size={16} /> 08023621200
               </li>
